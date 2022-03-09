@@ -1,34 +1,50 @@
 :root {
-  --color-grey-1: #bdbdbd;
-  --color-orange-1: #f9a109;
-  --color-red-1: #eb5757;
-  --color-background-1: #fafafe;
-  --color-background-2: #fff0de;
-  --color-blue-1: #56ccf2;
+	--color-grey-1: #bdbdbd;
+	--color-orange-1: #f9a109;
+	--color-red-1: #eb5757;
+	--color-background-1: #fafafe;
+	--color-background-2: #fff0de;
+	--color-blue-1: #56ccf2;
 }
 
-
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 html {
-  box-sizing: border-box;
-  font-size: 62.5%; 
+	box-sizing: border-box;
+	font-size: 62.5%;
 }
 
 body {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 500;
-  line-height: 2rem;
-  color: #000;
-  background-color: var(--color-background-1);
-  min-height: 100vh;
+	font-family: "Quicksand", sans-serif;
+	font-weight: 500;
+	line-height: 2rem;
+	color: #000;
+	background-color: var(--color-background-1);
+	min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: start;
+    column-gap: 3rem;
+    background-color: var(--color-background-1);
+
+}
+.previews{
+    width: 300px;
+    background-color: var(--color-background-2);
+}
+.previews > img {
+	width: 80%;
+	height: auto;
+	margin: 0.5rem auto;
 }
